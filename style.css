@@ -1,0 +1,139 @@
+@charset "UTF 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    --color-1: #969696;
+    --color-2: #6a6f81;
+    --color-3: #2d3248;
+    --color-4: #19a2ae;
+}
+
+body{
+    background-color: var(--color-4);
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kumbh Sans', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+
+p{
+    color: var(--color-1);
+}
+
+strong{
+     color: var(--color-3);
+}
+
+#content{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 25px 25px 35px rgba(0, 0, 0, 0.182);
+    font-size: 1em;
+    position: absolute;
+}
+
+#img{
+    display: flex;
+    align-items: baseline;
+    height: 200px;
+    width: 400px;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+}
+
+#victor{
+    border-radius: 60px;
+    border: 5px solid white;
+}
+
+#background-1{
+    background-image: url(images/bg-pattern-card.svg);
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#background-2{
+    height: 50px;
+}
+
+#data{
+    text-align: center;
+    padding: 20px;
+}
+
+hr{
+    color: var(--color-1);
+}
+
+#card-header{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px 0px;
+}
+
+#container{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+#status{
+    display: grid;
+    grid-template-areas: 
+    'number number number'
+    'tag tag tag';
+    column-gap: 50px;
+    row-gap: 10px;
+    padding-top: 20px;
+}
+
+#status > p{
+    grid-area: 'tag';
+    font-size: 12px;
+    text-align: center;
+}
+
+.number{
+    font-weight: bold;
+    grid-area: 'number';
+    text-align: center;
+    color: var(--color-3);
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+#ballon-top{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+
+#ballon-bottom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+
+
+
